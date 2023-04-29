@@ -1,12 +1,16 @@
 *{
     margin: 0;
     padding: 0;
-    vertical-align: middle;
 }
 
 .navbar{
     --bs-navbar-padding-y: 0;
     --bs-navbar-brand-font-size: 0;
+}
+
+.navbar>.container-fluid,a{
+    background-color: #000;
+    color: #fff;
 }
 
 .navbar-nav{
@@ -20,12 +24,12 @@ a{
 }
 
 .container-fluid, .navbar-header{
+    padding: 0;
     height: 50px;
-    padding-left: calc(var(--bs-gutter-x) * .2);
 }
 
 .logo{
-    margin-top: 12px;
+    width: 33%;
 }
 
 .menu{
@@ -45,20 +49,22 @@ a{
     margin: 0;
 }
 
-.center{
-    padding-left: 7vh;
-    padding-right: 7vh;
+.center,p{
+    padding-left: 5vh;
+    padding-right: 5vh;
     text-align: center;
 }
 
 a,li{
     text-decoration: none;
-    color: #000;
     list-style: none;
 }
 
-h2,p{
+h3,h2{
     text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .some{
@@ -130,7 +136,7 @@ section#contact #contact-form form {
       section#contact #contact-form form {
         width: 90%; } }
     section#contact #contact-form form .first {
-      width: 100% !important; }
+      width: 100%; }
     section#contact #contact-form form .field {
       height: 40px;
       width: 49%;
@@ -145,7 +151,7 @@ section#contact #contact-form form {
     section#contact #contact-form form textarea {
       width: 100%; }
     section#contact #contact-form form .field, section#contact #contact-form form textarea, .field1 {
-      border: medium none !important;
+      border: medium none;
       background-color: #dd4e62;
       color: #f4f4f4;
       font-size: 0.75em;
@@ -173,6 +179,14 @@ section#contact #contact-form form {
       font-size: 0.875em; 
     }
   
+    .logo1{
+        height: 80px;
+    }
+
+    #some{
+        display: none;
+
+    }
 
 @media only screen and (max-width: 480px){
 section#showcase ul#photo-wrap li {
@@ -188,8 +202,18 @@ section#showcase ul#photo-wrap li {
 
 @media (max-width: 480px) {
     
+.carousel{
+    display: none;
+}
+
     .navbar{
         display: none;
+    }
+
+    #some{
+        display: grid;
+        align-items: center;
+        text-align: center;
     }
 
     section#showcase ul#photo-wrap li {
@@ -197,13 +221,10 @@ section#showcase ul#photo-wrap li {
         }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
     
-    .row{
+    .row,.navbar-nav{
         display: none;
-    }
-    .grazi{
-        display: inherit;
     }
 
     .foto_meio{
@@ -214,6 +235,3 @@ section#showcase ul#photo-wrap li {
         display:grid;
     }
 }
-
-
-
