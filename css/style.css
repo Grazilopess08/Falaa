@@ -3,9 +3,37 @@ body{
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.texto{
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    width: 260px;
+    word-wrap: break-word;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
 #caixa{
     width: 320px;
     height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background: rgba(15, 15, 15, 0.60);
+    box-shadow: -10px 17px 37px 7px rgba(0, 0, 0, 0.15) inset;
+    text-align: center;
+}
+
+.voltar{
+    margin-left: -7px;
+    margin-top: 2px;
+}
+
+#caixa2{
+    width: 320px;
+    height: 620px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -59,6 +87,19 @@ h1{
     border: none;
     color: #fff;
     border-radius: 5px;
+    font-family: Kavoon;
+    font-size: 15px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.but2{
+    margin-bottom: 10px;
+    height: 50px;
+    width: 50px;
+    background-color:#9FBCF0;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
     font-family: Kavoon;
     font-size: 15px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

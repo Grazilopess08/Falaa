@@ -4,6 +4,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.trans{
+    margin-left: 10px;
+}
+
+.but{
+    font-size: 20px;
+    border-radius: 100px;
+    background-color: #7d1aff;
+}
+
+.namechat{
+    margin: 0 auto;
+    text-align: center;
+}
+
 h1{
     margin: 10px;
     color: #Fff;
@@ -19,7 +34,7 @@ h1{
 }
 
 .chat-container {
-    width:88vw;
+    width: 90%;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -30,7 +45,7 @@ h1{
 }
 
 .input-container {
-    width: 90vw;
+    width: 92%;
     margin: 0 auto;
     padding: 10px;
     display: flex;
@@ -46,6 +61,10 @@ input[type="text"] {
     border: none;
     border-radius: 5px;
     outline: none;
+}
+
+.dec{
+    text-decoration: none;
 }
 
 button {
@@ -69,21 +88,49 @@ button:hover {
     font-size: 20px;
 }
 
-@media screen and (max-width: 600px) {
-    .chat-container, .input-container {
-        max-width: 90%;
-    }
-
-    .chat-container {
-        height: 300px;
-    }
-
-    .input-container {
-        flex-direction: column;
-    }
-
-    input[type="text"] {
-        margin-bottom: 10px;
-    }
+.chat-wrapper {
+    display: flex;
+    height: 90%;
 }
+
+.sidebar {
+    margin: 3%;
+    width: 20%;
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.sidebar2 {
+    margin: 3%;
+    width: 100%;
+}
+
+.chat-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.room-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.room {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.room2 {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
 

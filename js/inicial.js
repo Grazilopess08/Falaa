@@ -22,3 +22,4 @@ function addMessage(sender, text) {
     chatContainer.appendChild(messageElement);
     chatContainer.scrollTop = chatContainer.scrollHeight; // Faz o scroll automático para a última mensagem
 }
+

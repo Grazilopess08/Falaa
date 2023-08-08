@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fala Aí</title>
+    <link rel="icon" type="" href="../img/icon.png"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body background="../img/Tela Inicial.jpg">
+    <div id="caixa">
+        <h1 class="centro">FalaAí</h1>   
+        <form action="../telas/inicial.html" method="GET">
+            <p class="centro">Nome da Sala</p>
+            <input class="in" contextmenu="Nome da Sala" type="text" required>
+            <p class="centro">Máximo de participantes</p>
+            <select name="" class="in">
+                <option value="10">10 Participantes</option>
+                <option value="50">50 Participantes</option>
+                <option value="100">100 Participantes</option>
+             </select>
+            <p class="termo">
+                <input type="checkbox" id="termosUso" required>
+                <label for="termosUso">Concordo com os termos de uso</label>
+            </p>
+            <button class="but" type="submit">Criar sala</button>
+        </form>
+        <div>
+            <a class="lin" href="../telas/termos.html"> Termos de Uso </a>
+        </div>
+    </div> 
+    <link rel="stylesheet" href="../js/inicial.js">
+</body>
+</html>
